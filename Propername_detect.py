@@ -53,8 +53,6 @@ def mark_organization_names(index_words: dict, qid_dict: dict):
     all_organization = []
     for c, word in enumerate(tqdm.tqdm(index_words, desc="Mark all Organization-Names")):
         word_article = word.replace(" ", "_")
-        if c== 20:
-            break
         if word_article in qid_dict:
             qid = qid_dict[word_article]["en"]["qid"].split("/")[-1]
             query = """SELECT DISTINCT ?class
