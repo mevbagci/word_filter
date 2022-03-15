@@ -81,3 +81,13 @@ def mark_organization_names(index_words: dict, qid_dict: dict):
     return index_words, all_organization
 
 
+def mark_organization_names_with_list(index_words: dict, organi_list: list):
+    counter = 0
+    for word in index_words:
+        if word in organi_list:
+            index_words[word]["No_proper_name"] = False
+            counter += 1
+    print(f"Number of Organization names found {counter} of {len(index_words)}")
+    return index_words
+
+
