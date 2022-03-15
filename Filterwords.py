@@ -100,7 +100,7 @@ def take_best_ddc(word_csv: pd, ddc_limit: float, langs: list, out_dir):
 if __name__ == "__main__":
     field_oecds = ["Mathematics", "Computer_and_information_sciences", "Economics_and_business", "Physical_sciences", ]
     limit_ddc = 0.75
-    for field_oecd in ["Economics_and_business"]:
+    for field_oecd in ["Physical_sciences"]:
         all_langs = ['en', 'de', 'fr', 'ru', 'es', 'it', 'arz', 'pl', 'ja', 'zh', 'ar', 'uk', "pt"]
         data_name = f"languagesAll_expanded_ddc2_incominglinks"
         csv_dir = f"/mnt/corpora2/projects/bagci/Arxiv/multilingual_data/baumartz/OECD-wikipedia_new/{field_oecd}/{data_name}.csv"
