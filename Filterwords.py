@@ -125,7 +125,7 @@ if __name__ == "__main__":
     #     csv_out_over_fac = f"{base_dir}/{data_name}_filtered_over_limit.csv"
     #     csv_data = filter_words(csv_dir, list_dir, out_dir=csv_out, only_sup_lang=False)
     #     take_best_ddc(csv_data, limit_ddc, all_langs, csv_out_over_fac)
-    for field_oecd in ["Biological_sciences", "Languages"]:
+    for field_oecd in ["Literature", "Law"]:
         all_langs = ['en', 'de', 'fr', 'ru', 'es', 'it', 'arz', 'pl', 'ja', 'zh', 'ar', 'uk', "pt"]
         version = "v4"
         data_name = f"languagesAll_expanded_ddc2_incominglinks_{version}"
