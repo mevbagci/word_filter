@@ -116,9 +116,10 @@ if __name__ == "__main__":
     field_oecds = ["Mathematics", "Computer_and_information_sciences", "Economics_and_business", "Physical_sciences", "Biological_sciences", "Languages", "Literature", "Law"]
     limit_ddc = 0.75
     for field_oecd in field_oecds:
+        version = "v4"
         all_langs = ['en', 'de', 'fr', 'ru', 'es', 'it', 'arz', 'pl', 'ja', 'zh', 'ar', 'uk', "pt"]
-        data_name = f"languagesAll_expanded_ddc2_incominglinks_v4"
-        base_dir = f"/mnt/corpora2/projects/bagci/Arxiv/multilingual_data/baumartz/OECD-wikipedia_new/{field_oecd}"
+        data_name = f"languagesAll_expanded_ddc2_incominglinks_{version}"
+        base_dir = f"/mnt/corpora2/projects/bagci/Arxiv/multilingual_data/baumartz/OECD-wikipedia_new_{version}/{field_oecd}"
         csv_dir = f"{base_dir}/{data_name}.csv"
         list_dir = f"{base_dir}/{field_oecd}_Organization_Names.txt"
         csv_out = f"{base_dir}/{data_name}_filtered.csv"
