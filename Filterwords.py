@@ -115,7 +115,7 @@ def get_all_organization_names(word_dir_csv: str, json_article_dir: str, out_dir
 if __name__ == "__main__":
     field_oecds = ["Mathematics", "Computer_and_information_sciences", "Economics_and_business", "Physical_sciences", "Biological_sciences", "Languages", "Literature", "Law"]
     limit_ddc = 0.75
-    for field_oecd in field_oecds[3:]:
+    for field_oecd in field_oecds[:3]:
         version = "v4"
         all_langs = ['en', 'de', 'fr', 'ru', 'es', 'it', 'arz', 'pl', 'ja', 'zh', 'ar', 'uk', "pt"]
         data_name = f"languagesAll_expanded_ddc2_incominglinks_{version}"
