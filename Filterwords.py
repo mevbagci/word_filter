@@ -122,9 +122,9 @@ if __name__ == "__main__":
         base_dir = f"/mnt/corpora2/projects/bagci/Arxiv/multilingual_data/baumartz/OECD-wikipedia_new_{version}/{field_oecd}"
         csv_dir = f"{base_dir}/{data_name}.csv"
         list_dir = f"{base_dir}/{field_oecd}_Organization_Names.txt"
-        csv_out = f"{base_dir}/{data_name}_filtered.csv"
+        # csv_out = f"{base_dir}/{data_name}_filtered.csv"
         csv_out_over_fac = f"{base_dir}/{data_name}_filtered_over_limit.csv"
-        csv_data = filter_words(csv_dir, list_dir, out_dir=csv_out, only_sup_lang=False)
+        csv_data = filter_words(csv_dir, list_dir, only_sup_lang=False)
         take_best_ddc(csv_data, limit_ddc, all_langs, csv_out_over_fac)
     # for field_oecd in ["Literature", "Law"]:
     #     all_langs = ['en', 'de', 'fr', 'ru', 'es', 'it', 'arz', 'pl', 'ja', 'zh', 'ar', 'uk', "pt"]
